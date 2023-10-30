@@ -1,7 +1,8 @@
 const path = require('path');
 const WebpackDevServer = require('webpack-dev-server');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const HTMLWebpackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HTMLWebpackPlugin = require('html-webpack-plugin');
+// const { VueLoaderPlugin } = require("vue-loader");
 module.exports = {
   mode: 'development',
   entry: './src/index.js',
@@ -24,7 +25,8 @@ module.exports = {
             },
           }
         ],
-      },{
+      },
+      {
             test: /\.ts$/,
             use: 'ts-loader'
       },
@@ -51,7 +53,8 @@ module.exports = {
   },
   plugins: [
         new MiniCssExtractPlugin(),
-        new HTMLWebpackPlugin()
+        new HTMLWebpackPlugin(),
+        // new VueLoaderPlugin(),
   ]
   
 };

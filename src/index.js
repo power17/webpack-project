@@ -1,5 +1,4 @@
   // ES6的模块化语法
-
 import './index.css'
 import './index.scss'
 console.log('hello1212');
