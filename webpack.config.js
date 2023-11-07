@@ -4,8 +4,11 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 // const { VueLoaderPlugin } = require("vue-loader");
 module.exports = {
-  mode: 'development',
-  entry: './src/index.js',
+  mode: 'development',  // development production, none
+  entry: './src/index.js', 
+  output: {
+    
+  },
   devServer: {
     static: {
       directory: path.join(__dirname, ''),

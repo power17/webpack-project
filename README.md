@@ -9,3 +9,6 @@
 - webpack-cli: 5.1.4
 
 # main 分支
+
+- webpack: 5.89.0,
+- webpack-cli: 5.1.4,
