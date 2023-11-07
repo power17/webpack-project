@@ -12,3 +12,4 @@
 
 - webpack: 5.89.0,
 - webpack-cli: 5.1.4,
+- node: v18.18.1
