@@ -1,1 +1,2 @@
-export var year = 2023
+var year = 2024
+console.log(year)
