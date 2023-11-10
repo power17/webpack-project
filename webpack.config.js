@@ -10,9 +10,26 @@ module.exports = {
     chunkFilename: '[chunkhash:8].js', // 异步模块名称
   },
   module: {
-    rules: [{
-      test: /\.css$/,
-      use: ['style-loader', 'css-loader']
-    }]
+    rules: [
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            cacheDirectory: true,
+            presets: ['@babel/preset-env']
+          }
+        },
+      },
+      {
+        test: /\.jpg$/,
+        use: 'file-loader'
+      }
+    ]
   }
 }
