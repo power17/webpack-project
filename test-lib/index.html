@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+...
+
+<body>
+  <script src="./dist/main.js"></script>
+  <script>
+    // Webpack 会将模块直接挂载到全局对象上
+    console.log(window._.add(1, 2))
+
+  </script>
+</body>
+
+</html>
