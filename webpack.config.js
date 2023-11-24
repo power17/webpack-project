@@ -31,10 +31,6 @@ module.exports = {
           }
         ],
       },
-      // {
-      //       test: /\.ts$/,
-      //       use: 'ts-loader'
-      // },
       {
         test: /\.css$/i,
         use: [// 根据运行环境判断使用那个 loader
